@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- fotm: 사영자로부터 특정 정보를 받아 서버로 전달하는 데 상여더ㅣ는 태그
+        action 속성: 전달받는 서버 페이지
+        method속성: 서버로 요청시 전달하는 방식
+        Gat:사용자정보를 Query String으로 전달(기본값)
+        Post:사용자정보를 Requset body(Payload) 로 전달
+    
+    -->
+    <form action="test.jsp" method="get">
+        <div>
+            <label for="username">이름: </label> <input type="text" name="username"><br />
+        </div>
+        <div>
+            <label for="age">나이: </label> <input type="text" name="age" id="age"><br />
+        </div>
+        <div>
+            <label for="addr">주소:</label> <input type="text" name="addr"><br />
+        </div>
+        <div>
+            <label for="usermail">메일:</label><input type="email" name="usermail" placeholder="----@email.com"><br>
+        </div>
+        <div>
+            <label for="">성별:</label> <input type="radio" name="gender" value="man">남 <input type="radio" name="gender"
+                value="woman">여 <br>
+        </div>
+        <label for="">취미:</label>
+        <div>
+        <p>
+            <input type="checkbox" name="hobby" value="clining">등사&nbsp;
+            <input type="checkbox" name="hobby" value="golf">골프&nbsp;
+            <input type="checkbox" name="hobby" value="swimming">수영&nbsp;
+            <input type="checkbox" name="hobby" value="reading">독서&nbsp;
+        </p>
+ 
+        </div>
+        <div>
+        비번: <input type="password"><br>
+    </div>
+        메모: <div>
+            <textarea cols="35" rows="15" name="memo" style="resize:none;"></textarea>
+        </div>
+        Phone
+        <div>
+            <select name="Ph--ln" id="">
+                <option value="053">053</option>
+                <option value="054">054</option>
+                <option value="010" selected>010</option>
+
+            </select>
+            <span> - </span>
+            <input type="tel">
+        </div>
+        <input type="submit">
+
+
+
+    </form>
+
+</body>
+
+</html>
