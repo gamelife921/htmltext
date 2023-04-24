@@ -1,0 +1,7 @@
+@import './a.css.css';
+@import './b.css.css';
+
+h1{
+    color: red;
+    background-color: aquamarine;
+}
