@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+            all: unset;
+        }
+        .btn{
+            display: block;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 20px ;
+            color: white;
+            font-weight: 700px;
+            font-size: 1.2rem;
+            margin:  5px;
+        }
+
+        .btn--primary{
+            background-color: royalblue;
+        }
+        .btn--secomdary{
+            background-color: lightblue;
+        }
+        .btn:hover{
+            opacity: 0.6;
+            font-size: 1.4rem;
+        }
+        .btn:active{
+            color: gray;
+            font-size: 1.2rem;
+            opacity: 0.8;;
+        }
+        .btn:visited{
+            background-color: brown;
+
+        }
+        .d1{
+            width: 0px;
+            border-bottom: 1px solid;
+            transition: 0.7s;
+        }
+        /* .d1:hober{
+            width: :150px;
+            border-bottom:1px solid transparent;
+            border-image:linear-gradient(to :right,red,orange,yellow,green,blue,indige,indihgo,putple);
+            border-image-slice:1;
+        } */
+        .d1>input{
+            border: 0px;
+            outline: 0px; /*라인 없엔다*/
+        }
+        .d2{
+
+        }
+        .d2>input{}
+
+        .d2>label{}
+
+        .d2>input[type=":checkbox"]:checked~label{
+            color: lightblue;
+            text-decoration: line-through;
+        }
+        .d3{}
+        .d3>input[type="checkbox"]{}
+        .d3>input[type="text"]{}
+        
+    </style>
+
+
+</head>
+<body>
+    <a href="##" id="a1" class="btn btn--primary">TEST</a>
+    <a href="###" id="a2" class="btn btn--secomdary">TEST</a>
+    <hr>
+
+    <div class="d1"><input type="text"></div>
+    <hr>
+    <div class="d2">
+        <input type="checkbox"><label for="">체크박스 테스트</label>
+    </div>
+    <hr>
+    <div class="d3">
+        <input type="checkbox" id="chk" class="chk">
+        <input type="text" id="txt" disabled>
+    </div>
+
+    <script>
+        const chkE1 = document.querySelector('.chk');
+        const txtE1 = document.querySelector('.txt');
+        chkE1.addEventListener('change',function(){
+           // alert("동작확인!");
+           if(this.checked){
+                txtE1.disabled=false;
+           }else{
+            txtE1.disabled=true;
+           }
+        });
+    </script>
+
+
+</body>
+</html>

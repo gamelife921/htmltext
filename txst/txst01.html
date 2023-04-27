@@ -5,78 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-    h1{
-        text-align: center;
-        color:blue;
-    }
-    #mmm{
-        list-style: none; 
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        color: blue;
-        background-color: aqua;
-        margin: 50px;
-        font-size: 25px;
-        height: 50px;
+
+    <style>
+        .a1{}
+        .a1>input[type="checkbox"]{
+            display: none;  
+        }
+        .a1>label{
+            width: 50px;
+            height: 50px;
+            display: inline-block;  
+            border: 1px solid brown;
+            
+            border-radius: 50%;
+        }
+        #climing:checked+label{
+            background-image: url('./txtsimge/hiking_FILL0_.svg');
+            background-size: 100%;
+            background-color: aqua;
+            border: 1px solid aqua;
+            border: 150px;
+            
+        }
+        #swiming:checked+label{
+            background-image: url('./txtsimge/pool_FILL0_.svg');
+            background-size: 100%;
+            background-color: aqua;
+        }
+        #reading:checked+label{
+            background-image: url('./txtsimge/book_FILL0.svg');
+            background-size: 100%;
+            background-color: aqua;
+        }
+        #running:checked+label{
+            background-image: url('./txtsimge/motorcycle_FILL0.svg');
+            background-size: 100%;
+            background-color: aqua;
+        }
         
-    }
-    #ttt{
-        height: 200px;
-        width: 700px;
+    </style>
 
-    }
 
-    #box{
-        background-color: wheat ;
-        border: 1px solid;
-        width: 40px;
-        
-    }
-    .lool{
-        width: 700px;
-    }
-
-    #aaa{
-        left: -20%;
-    }
-    
-
-</style>
-<link rel="stylesheet" href="cc01.css">
-</head>
+</head> 
 <body>
-    <h1>Match Up</h1>
-    <div style="text-align: right; color: blue;">로그아웃</div>
-    <div style="text-align: right; color: blue;">내팀 정보</div>
-    <div></div>
-    <div></div>
-    <div></div>
-        <ul id="mmm">
-            <il>자유 게시판</il>
-            <il>경기 일정</il>
-            <il>등록</il>
-            <il>News</il>
-        </ul>
-        
-
-        <form id="aaa">
-            <div >제목</div>
-            <input type="text" class="lool"><br>
-            <div>작성자</div>
-            <input type="text" class="lool"><br>
-            <div>본문</div><br>
-            <input type="file" class="lool"><br>
-            <input type="button" value="upload"><br>
-            <!-- <input type="text" id="ttt"><br> -->
-            <textarea name="noit" id="ttt" cols="30" rows="10" style="resize: none;"></textarea>
-            <div id="box">제출</div>
 
 
-
-        </form>
-
+    <div class="a1">
+        <!-- 취미 각각에 맞는 이미지를ㄹ 찾아서 lavel의 백그라운드 하기-->
+        <input type="checkbox" id="climing"><label for="climing"></label>
+        <input type="checkbox" id="swiming"><label for="swiming"></label>
+        <input type="checkbox" id="reading"><label for="reading"></label>
+        <input type="checkbox" id="running"><label for="running"></label>
+    </div>
     
 </body>
 </html>

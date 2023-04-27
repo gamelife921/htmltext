@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        position: Box의 위를ㄹ 지정할때 사용하는 속성
+        stati(기본): box요소가 문서 흐름에 따라 배치 (순차적)
+        relative: box요소가 문서 흐름에 따라 배치 (순차적), 상위box요소를 기준으로 위치 결정가능(top,left,right,border)
+        aboslute : 상위 box요소를 기준으로 위치 결정가능, 상위 box요소가 Position 설정이 되어 있어야 가능 
+                    만약 상위 box요소의 positiondl 설정됭 있지 않는 경우는 뷰포트를 기준으로 위치 조정가능
+        fixed : 뷰포트를 기준으로 배치, 스크롤 을 해도 항상 같은 위치 고정
+        sticky : 스크롤 영역을 기준으로 배치, 스크롤 우치를 따라가다가 일정위치를 넘어서면 고정
+
+     -->
+     <style>
+        .parent{
+            width: 500px;height: 500px;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            background-color: royalblue;
+        }
+        div{width: 50px; height: 50px; border: 1px solid greenyellow; background-color: orange;}
+
+        .son:nth-child(1){
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            right: 0px;
+            bottom: 00px;
+        }
+        .son:nth-child(2){
+            position: absolute;
+            top: 25%;
+            left: 10%;
+            right: 0px;
+            bottom: 00px;
+        }
+        .son:nth-child(3){
+            position: absolute;
+            top: 100%;
+            left: 100%;
+            right: 0px;
+            bottom: 00px;
+        }
+        .son:nth-child(4){
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            right: 0px;
+            bottom: 0px;
+        }
+        
+     </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="son">1</div>
+        <div class="son">2</div>
+        <div class="son">3</div>
+        <div class="son">4</div>
+    </div>
+
+</body>
+</html>
