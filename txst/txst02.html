@@ -5,19 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- https://ko.wix.com/website-template/view/html/2936?originUrl=https%3A%2F%2Fko.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fall%2F2&tpClick=view_button&esi=0d68c02b-6b3e-48a6-b96f-a7543fa49d39 -->
+    <style>
+        *{}
+        div{}
+        ul{ list-style: none; color: black;}
+        li{}
+        h1{font-size: 60px; text-align: center; margin: 0;}
+        h3{
+            font-size: 20px;text-align: center; 
+            display: block;
+            background-color: greenyellow;  
+            line-height: 50px;
+            margin: 0 auto;
+            height: 50px;
+            width: 300px;
+        }
+
+        .manu{
+            display: flex;
+            border: 1px solid gray;
+            
+        }
+        .manu>li{
+            width: 120px;
+            
+            
+        }
+        .manu>li>a{}
+        .manu>li>.smanu{
+            border: 1px solid greenyellow;
+            display: inline-block;
+        }
+        .manu>li>.smanu>li{}
+
+
+        #cold{
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: auto;
+            height: 50px;
+            line-height: 50px;
+        }
+       
+   
+
+
+
+
+
+
+
+    </style>
 </head>
 <body>
     <div></div>
-    <p>SALE! 할인 코드 TEES25 입력 시, 전체 25% 할인 해택!</p>
-    <header>
-        <div>T SHOP</div>
-            <ul>
-                <li>신제품</li>
-                <li>여성 의류</li>
-                <li>남성 의류</li>
-                <li><input type="checkbox"> 로그인</li>
-            </ul>
-    </header>
+    <p id="cold">SALE! 할인 코드 TEES25 입력 시, 전체 25% 할인 해택!</p><br>
+    <div>
+        <ul class="manu">
+            <li>
+                <a href="">T SHOP</a>
+                <ul class="smanu">
+                    <li>신제품</li>
+                    <li>여성의류</li>
+                    <li>남성의류</li>
+                    <li>로그인</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
     <h1>T SOHP</h1>
     <h3>모두를 위한 단 하나의 티셔츠</h3>
     <ul>
@@ -79,31 +136,33 @@
             <th>x</th>
         </tr>
     </table>
-    <div></div>
-    <div>
-        <div>
+    <div>처음 구매 고객 꼐 10%할인 헤택을 드립니다</div>
+    <ul>
+        <li>
+            <div>T SHOP</div>
             <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
+            <div>ykdd9021@naver.com</div>
+            <div>Tel: 010-0000-0000</div>
+        </li>
+        <li>
+            <div>구매 하기</div>
+            <div>신제품</div>
+            <div>여성의류</div>
+            <div>남성의류</div>
+        </li>
+        <li>
+            <div>T SHOP</div>
+            <div>브랜드 소개</div>
+            <div>구독</div>
+            <div>FAQ</div>
+        </li>
+        <li>
+            <div>이용약관</div>
+            <div>쇼핑물 정책</div>
+            <div>배송 및 교환</div>
+            <div>결제 방법</div>
+        </li>
+
+    </ul>
 </body>
 </html>
