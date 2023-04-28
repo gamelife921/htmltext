@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{margin: 0px;}
+        ul{
+            list-style: none;
+            padding: 0px;
+        }
+        
+        header{
+            /* line-height: 90px; */
+            height: 90px;
+            border: 1px solid gray;
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+        
+        }
+        header>.header-loge{
+            width: 90px;
+            height: 55px;
+        }
+        header>.header-loge>img{
+            width: 90px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        /* 헤더 gnb */
+        header>.gnb{}
+        header>.gnb>.one-dep{
+            width: 1000px;
+            display: flex;
+            justify-content: right;    
+            margin: 0px;
+        }
+        header>.gnb>.one-dep>li{
+         
+         width: 120px;
+         height: 90px;
+         line-height: 90px;
+         border: 1px solid gray;
+         text-align: center;            
+     }
+        header>.gnb>.one-dep>li>a{
+            display: block;
+        }
+        header>.gnb>.one-dep>li>.two-dep{
+            border: 1px solid gray;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+        }
+        header>.gnb>.one-dep>li>.two-dep>li{
+            height: 35px;
+        }
+        header>.gnb>.one-dep>li>.two-dep>li>a{}
+        header>.gnb>.one-dep>li:hover .two-dep{
+            display: block b;
+        }
+
+        /* 해더 gnb-link */
+        header>.gnb-link{}
+        
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <div class="header-loge"><img src="http://www.mjvisiontech.com/theme/mj/img/common/logo_w.svg" > LOGE</div>
+        <nav class=""gnb>
+            <ul class="one-dep">
+                <li>
+                    <a href="" >회사 소개</a>
+                    <ul class="two-dep">
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">보유기술</a>
+                    <ul class="two-dep">
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">제품소개</a>
+                    <ul class="two-dep">
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">고객지원</a>
+                    <ul class="two-dep">
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="gnb">GNB</div>
+        <div class="gnb-link">GNB-link</div>
+    </header>
+    
+</body>
+</html>
