@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 2px;}
+
+        body{}
+
+        ul{list-style: none;
+            padding: 0px;
+        }
+        a{text-decoration: none; color: black;}
+
+        .con{
+            width: 100%;
+        }
+        .con>header{
+            border: 1px solid;
+        }
+        div>header>.top{
+            height: 40px;
+            border: 1px solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .con>header>.top>.logo{
+            border: 1px solid;
+            height: 30px;
+            width: 100px;
+            align-content: center;
+            text-align: center;
+            line-height: 30px;
+        }
+        .con>header>.top>ul{
+            border: 1px solid;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+        .con>header>.top>ul>li{
+            border: 1px solid;
+            position: relative;
+        }
+        
+        .con>header>.top>ul>li>a{
+            display: block;
+        }
+        .con>header>.main{
+            border: 1px solid;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="con">
+        <header>
+            <div class="top">
+                <div class="logo">logo</div>
+                <ul>
+                    <li><a href="">나의정보</a></li>
+                    <li><a href="">고객센터</a></li>
+                    <li><a href="">로그아웃</a></li>
+                    <li><a href="">기타등등</a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <div>MENU1</div>
+                <div>MENU2</div>
+                <div>MENU3</div>
+                <div>MENU4</div>
+                <div>MENU5</div>
+                <div>MENU6</div>
+            </div>
+        </header>
+    </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,12 @@
+*{}
+body{margin: 0;}
+.wmw{width: 100%;}
+
+ul{
+    list-style: none;
+    padding: 0px;
+}
+a{text-decoration: none; color: black;}
+
+.wmw>header{
+} 

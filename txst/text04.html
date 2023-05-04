@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .aa{
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+
+            position: fixed;
+            left: 0px; top: 0px; right: 0px; border: 0px;
+            margin: auto;
+            
+        }
+        .aa>.bb{
+
+            width: 200px;
+            height: 200px;
+            position: relative;
+
+            transform-style: preserve-3d;
+            transition: 1s;
+           
+        }
+        .aa>.bb>.cc,
+        .aa>.bb>.dd{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0px; top: 0px;
+
+            backface-visibility: hidden;
+            
+        }
+
+        .aa>.bb>.cc{
+            background-color: mediumspringgreen;
+            background-size: contain;
+            background-repeat: no-repeat;
+         
+        }
+        .aa>.bb>.dd{
+            background-color: yellow;
+            transform: rotateY(180deg);
+           
+
+        }
+
+        .bb:hover{
+            transform: rotateY(180deg);
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="aa">
+        <div class="bb">
+            <div class="cc"></div>
+            <div class="dd"></div>
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>

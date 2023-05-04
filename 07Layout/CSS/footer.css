@@ -1,0 +1,29 @@
+/* 푸터 */
+.wrapper>footer{
+    border: 1px solid gray;
+    height: 100%;
+
+}
+
+.wrapper>footer>article{
+    border: 1px solid gray;
+    flex-grow: 1;
+    height: 200px;
+    background-color: aqua;
+}
+.wrapper>footer>div{
+    display: flex;
+    
+}
+.wrapper>footer>div>aside{
+    border:  1px solid gray;
+    flex-grow: 1;
+    height: 250px;
+    background-color: yellow;
+}
+.wrapper>footer>div>article{
+    border: 1px solid gray;
+    flex-grow: 3;
+    height: 250px;
+    background-color: mediumspringgreen;
+}

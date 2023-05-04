@@ -1,0 +1,67 @@
+.wrapper>main{
+ 
+  text-align: center;
+  line-height: 300px;
+}
+
+.wrapper>main>section{
+   
+    height: 300px;
+}
+
+.wrapper>main>section:nth-child(1){
+    height: 300px;
+    display: flex;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-top: 2px solid;
+}
+.wrapper>main>section:nth-child(1)>aside{
+   
+    width: 300px;
+}
+.wrapper>main>section:nth-child(1)>article{
+    background-image: url("./img/치킨\ 광고.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    height: 100%;
+    
+    flex-grow: 5;
+}
+.wrapper>main>section:nth-child(2){
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid black;
+}
+
+
+ 
+
+.container{
+  
+   
+}
+.container>.card{
+ 
+}
+.container>.card>.front,
+.container>.card>.back
+{}
+ 
+
+.container>.card>.front{
+ 
+    
+}
+.container>.card>.front:hover{
+ 
+}
+.container>.card>.back{
+ 
+}
+.container:hover .card{
+  
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{}
+        
+        body{}
+        .wrapper{}
+        .wrapper>.parent{
+            display: flex;
+            width: 1300px;
+            height: 100px;
+            border: 1px solid gray;
+            /* 표시형태 */
+            display: flex;
+            /* 수평배치 형태 center  left  right space-between space-evenly space-around*/
+            justify-content: space-around;
+            /* 수직 배치형태 flex-end  flex-start center*/
+            align-items: flex-start;
+
+            margin-bottom: 20px;
+
+        }
+        .wrapper>.parent>.child{
+
+            width: 120px;
+            height: 40px;
+            border: 1px solid;
+
+
+        }
+
+        .wrapper>.parent2{
+            display: flex;
+            width: 1300px;
+            height: 300px;
+            border: 1px solid gray;
+            /* flex-wrap = no-wrap 기본갑스 한라인에 모든 아이템 포함 */
+            /* flex-wrap = wrap item의 크기가 부모의 width를 초과할때 다음라인으로 이동 */
+            flex-wrap: wrap;
+            /* 교차축 정렬 방식 flex-wrap:wrap 으로 솔종ㄷ힌 이후에 사용가능 */
+            align-content: stretch;
+          
+
+        }
+        .wrapper>.parent2>.item{
+            
+            width: 150px;
+            /* height: 40px; */
+            border: 1px solid;
+        }
+        .wrapper>.parent2>.item:nth-child(1){
+            align-self: flex-start;
+            height: 50px;
+        }
+        .wrapper>.parent2>.item:nth-child(2){
+            align-self: center;
+            height: 60px;
+        }
+        .wrapper>.parent2>.item:nth-child(3){
+            align-self: flex-end;
+            height: 40px;
+        }
+        .wrapper>.parent2>.item:nth-child(4){ 
+            /* item 의 증가비율 parent의 width를 나눠가지는 비율*/
+            flex-grow: 1;
+        }
+        .wrapper>.parent2>.item:nth-child(5){ 
+            flex-grow: 2;
+        }
+        .wrapper>.parent2>.item:nth-child(6){ 
+            flex-grow: 1;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <div class="wrapper">
+        <!-- .parent>.child*4 -->
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+        </div>
+
+        <div class="parent2">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+        </div>
+
+    </div>
+
+
+
+
+
+    
+</body>
+</html>

@@ -7,11 +7,14 @@
     <title>Document</title>
     <!-- https://ko.wix.com/website-template/view/html/2936?originUrl=https%3A%2F%2Fko.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fall%2F2&tpClick=view_button&esi=0d68c02b-6b3e-48a6-b96f-a7543fa49d39 -->
     <style>
-        *{}
+        *{margin: 2px;}
         div{}
-        ul{ list-style: none; color: black;}
-        li{}
+
+        ul{ list-style: none; padding: 0px;}
+        a{text-decoration: none; color: black;}
+
         h1{font-size: 60px; text-align: center; margin: 0;}
+
         h3{
             font-size: 20px;text-align: center; 
             display: block;
@@ -22,22 +25,34 @@
             width: 300px;
         }
 
-        .manu{
-            display: flex;
-            border: 1px solid gray;
-            
+        .main{border: 1px solid; width: 100%;height: 40px; display: flex; justify-content: space-between; align-items: center;} 
+
+        .main>div{
+            /* border: 1px solid;  */
+            height: 30px;
+            width: 100px;
+            align-content: center;
+            text-align: center;
+            line-height: 30px;
+            background-color: greenyellow;
         }
-        .manu>li{
-            width: 120px;
-            
-            
+
+        .main>.manu{
+            width: 300px;
+            height: 30px;
+            /* border: 1px solid; */
+             display: flex;
+            justify-content: space-evenly;
         }
-        .manu>li>a{}
-        .manu>li>.smanu{
-            border: 1px solid greenyellow;
-            display: inline-block;
+        .main>.manu>li{
+            /* border: 1px solid; */
+            position: relative;
         }
-        .manu>li>.smanu>li{}
+
+
+
+        .main>.manu>li>a{}
+
 
 
         #cold{
@@ -60,21 +75,19 @@
     </style>
 </head>
 <body>
-    <div></div>
-    <p id="cold">SALE! 할인 코드 TEES25 입력 시, 전체 25% 할인 해택!</p><br>
     <div>
+    <p id="cold">SALE! 할인 코드 TEES25 입력 시, 전체 25% 할인 해택!</p><br>
+    <div class="main">
+        <div>T SHOP</div>
         <ul class="manu">
-            <li>
-                <a href="">T SHOP</a>
-                <ul class="smanu">
-                    <li>신제품</li>
-                    <li>여성의류</li>
-                    <li>남성의류</li>
-                    <li>로그인</li>
-                </ul>
-            </li>
+          
+           <li><a href="">신제품</a></li>
+           <li><a href="">여성의류</a></li>
+           <li><a href="">남성의류</a></li>
+           <li><a href="">로그인</a></li>
         </ul>
     </div>
+</div>
     <h1>T SOHP</h1>
     <h3>모두를 위한 단 하나의 티셔츠</h3>
     <ul>

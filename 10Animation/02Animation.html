@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div{
+        position: relative;
+      }
+
+      .anima-test{
+       width: 500px;
+       margin: 100px auto;
+       position: relative;
+        top: 100px;
+        left: 100px;
+    }
+      .anima-test>div{
+        width: 400px; height: 40px; background-color: orange;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid black;
+            
+      }
+      .anima-test>.d1{
+        animation-name: moving1;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+      }
+      .anima-test>.d2{
+        animation-name: moving2;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+      }
+      .anima-test>.d3{
+        animation-name: moving3;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+      }
+
+
+
+        
+        @keyframes moving1 {
+            from{top: 1000px;}
+            to{top: 0px;}
+           
+        }
+        @keyframes moving2 {
+            from{left: 1000px;}
+            to{left:0px;}
+        }
+        @keyframes moving3 {
+            from{top: 1000px;left: 1000px;}
+            to{top: 0px; left: 0px;}
+            
+            0%{
+                transform: perspective(0px) rotateY(0deg);
+            }
+
+            100%{
+                transform: perspective(100px);
+            }
+
+            }
+    </style>
+</head>
+<body>
+    <div class="anima-test">
+        <div class="d1">HELLOWORLD</div>
+        <div class="d2">HELLOWORLD</div>
+        <div class="d3">HELLOWORLD</div>
+    </div>
+    
+</body>
+</html>

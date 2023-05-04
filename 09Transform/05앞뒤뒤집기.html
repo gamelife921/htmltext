@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+            
+            position: fixed;
+            left: 0px;top: 0px;right: 0px;bottom: 0px;
+            margin: auto;
+
+            /* left: 50%;
+            top: 50%;
+            transform: translateX(-50%);
+            transform: translateY(-50%); */
+        }
+        .container>.card{
+            width: 200px;
+            height: 200px;
+            position: relative;
+
+            transform-style: preserve-3d;
+            transition: 1s;
+            
+        }
+        .container>.card>.front,
+        .container>.card>.back{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0px;top: 0px;
+
+            /* rotateY : 일떄 숨김처리 */
+            backface-visibility: hidden;
+            border-radius: 50%;
+        
+            box-shadow:  15px 15px 15px lightblue;
+        }
+
+        .container>.card>.front{
+            /* background-color: orange; */
+            background-image: url(https://www.coffeebeankorea.com/data/menu/%ED%94%8C%EB%9E%AB%ED%99%94%EC%9D%B4%ED%8A%B8.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+        
+        }
+
+        .container>.card>.back{
+            background-color: royalblue;
+               /* back은 기본적으로 hidden 처리 */
+            transform: rotateY(180deg);
+            font-size: 0.7rem;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card:hover {
+            /* Front: 180deg 일떄 hidden 처리 */
+            transform: rotateY(180deg);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <div class="front"></div>
+            <div class="back">
+                아이스 아메리카노 할인 벤트 진행중
+                2023-05-03 ~ 2023-05-15까지
+            </div>
+        </div>
+    </div>
+</body>
+</html>

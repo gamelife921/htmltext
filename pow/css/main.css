@@ -1,0 +1,75 @@
+.wmw>main>.main-one{
+    border: 1px solid;
+    
+}
+.wmw>main>.main-one>ul{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-evenly;
+}
+.wmw>main>.main-one>ul>li{
+    border: 1px solid;
+}
+.wmw>main>.main-one>ul>li>input{}
+
+.wmw>main>.main-one>section{
+    border: 1px solid;
+    display: flex;
+    height: 400px;
+}
+.wmw>main>.main-one>section>aside{
+    width: 300px;
+    border: 1px solid;
+
+}
+.wmw>main>.main-one>section>.one{
+    display: flex;
+    width: 300px;
+}
+.wmw>main>.main-one>section>.one>article{
+    height: 200px;
+    
+    border: 1px solid;
+}
+.wmw>main>.main-one>section>.one>aside{
+    height: 200px;
+    border: 1px solid;
+}
+
+
+
+.wmw>main>.main-one>section>.twe{
+    display: flex;
+    width: 300px;
+    border: 1px solid;
+}
+.wmw>main>.main-one>section>.twe>article{}
+.wmw>main>.main-one>section>.twe>aside{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

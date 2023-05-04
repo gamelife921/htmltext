@@ -1,0 +1,39 @@
+
+.wmw>header>.top-head{
+    height: 40px;
+    background-color: red; 
+    display: flex; 
+    text-align: center; 
+   position: relative;
+   justify-content: space-evenly;
+
+  
+}
+
+.wmw>header>.top-head>.manu{
+    width: 100px;
+    height: 30px;
+   position: absolute; 
+   left: 0;
+    line-height: 30px;
+ 
+ }
+
+.wmw>header>.top-head>ul{
+    display:  flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+    line-height: 30px;
+   justify-content: space-evenly;
+ 
+}
+.wmw>header>.top-head>ul>#logo{
+    left: -60px;
+}
+.wmw>header>.top-head>ul>li{
+    position: relative;
+}
+.wmw>header>.top-head>ul>li>a{
+    display: block;
+}
